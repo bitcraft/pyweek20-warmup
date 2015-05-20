@@ -1,4 +1,5 @@
 # do not use pygame, it will break travis
-# pygame
+# pygame (not if you do it correctly)
+hg+http://bitbucket.org/pygame/pygame
 nose
 tazlib==1.3.1
