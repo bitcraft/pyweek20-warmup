@@ -1,0 +1,3 @@
+# do not use pygame, it will break travis
+# pygame
+nose
