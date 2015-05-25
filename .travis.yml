@@ -1,0 +1,13 @@
+language: python
+python:
+- '2.7'
+- '3.3'
+- '3.4'
+install:
+# - if [ -z "$TRAVIS_TAG" ]; then sudo apt-get update -qq; fi
+# - if [ -z "$TRAVIS_TAG" ]; then sudo apt-get build-dep python-pygame; fi
+# - if [ -z "$TRAVIS_TAG" ]; then pip install .; fi
+- if [ -z "$TRAVIS_TAG" ]; then pip install -r requirements.txt; fi
+notifications:
+  irc: chat.freenode.net#pygame2
+script: if [ -z "$TRAVIS_TAG" ]; then nosetests; fi
