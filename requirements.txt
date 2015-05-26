@@ -2,4 +2,4 @@
 # pygame (some more dependencies are needed)
 # hg+http://bitbucket.org/pygame/pygame
 nose
-tazlib==1.3.1
+tazlib==1.3.2
